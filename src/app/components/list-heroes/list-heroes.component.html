@@ -1,1 +1,11 @@
-<p>list-heroes works!</p>
+<section>
+  @for (hero of getHeroes; track hero.id) {
+  <div>
+    <h3>{{ hero.superhero }}</h3>
+    <p>{{ hero.publisher }}</p>
+    <p>{{ hero.alter_ego }}</p>
+    <p>{{ hero.first_appearance }}</p>
+    <p>{{ hero.characters }}</p>
+  </div>
+  }
+</section>
