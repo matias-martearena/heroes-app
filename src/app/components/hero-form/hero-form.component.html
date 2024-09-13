@@ -5,8 +5,8 @@
         <mat-grid-list cols="5" rowHeight="70px">
           <mat-grid-tile [colspan]="3" [rowspan]="1">
             <mat-form-field class="input">
-              <mat-label>Usuario</mat-label>
-              <input matInput formControlName="user" />
+              <mat-label>Nombre del Heroe</mat-label>
+              <input matInput formControlName="superhero" />
             </mat-form-field>
           </mat-grid-tile>
 
@@ -16,30 +16,35 @@
 
           <mat-grid-tile [colspan]="3" [rowspan]="1">
             <mat-form-field class="input">
-              <mat-label>Apellido</mat-label>
-              <input matInput formControlName="user" />
+              <mat-label>Publicador</mat-label>
+              <input matInput formControlName="publisher" />
             </mat-form-field>
           </mat-grid-tile>
 
           <mat-grid-tile [colspan]="3" [rowspan]="1">
             <mat-form-field class="input">
-              <mat-label>Contraseña</mat-label>
-              <input matInput formControlName="user" />
+              <mat-label>Alter ego</mat-label>
+              <input matInput formControlName="alter_ego" />
             </mat-form-field>
           </mat-grid-tile>
 
           <mat-grid-tile [colspan]="3" [rowspan]="1">
             <mat-form-field class="input">
-              <mat-label>Género</mat-label>
-              <mat-select>
-                <mat-option value="option">Masculino</mat-option>
-                <mat-option value="option">Femenino</mat-option>
-              </mat-select>
+              <mat-label>Primera Aparicion</mat-label>
+              <input matInput formControlName="first_appearance" />
             </mat-form-field>
           </mat-grid-tile>
 
+           <mat-grid-tile [colspan]="3" [rowspan]="1">
+            <mat-form-field class="input">
+              <mat-label>Personajes</mat-label>
+              <input matInput formControlName="characters" />
+            </mat-form-field>
+          </mat-grid-tile>
+
+
           <mat-grid-tile [colspan]="3" [rowspan]="1">
-              <button class="button" mat-flat-button color="primary">CREAR USUARIO</button>
+              <button class="button" mat-flat-button color="primary">CREAR HEROE</button>
           </mat-grid-tile>
         </mat-grid-list>
       </form>
