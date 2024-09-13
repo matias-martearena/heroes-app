@@ -1,9 +1,36 @@
-nav {
+mat-sidenav-container {
   width: 100dvw;
+  height: 100dvh;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  gap: 9rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link-span {
+  padding-left: 7px;
+}
+
+mat-sidenav {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 mat-toolbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.container {
+  width: 75%;
 }

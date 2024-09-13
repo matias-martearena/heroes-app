@@ -1,17 +1,51 @@
-<nav>
-  <mat-toolbar>
+<mat-sidenav-container>
+  <!-- Sidenav con links -->
+  <mat-sidenav
+    #sidenav
+    mode="push"
+  >
+    <div class="sidebar-container">
+      <mat-toolbar color="primary">
+        <button
+          mat-icon-button
+          (click)="sidenav.toggle()"
+        >
+          <mat-icon>arrow_back</mat-icon>
+        </button>
+      </mat-toolbar>
+
+      <mat-nav-list>
+        @for (item of sidebarItems; track $index) {
+        <a [href]="item.url">
+          <mat-list-item href="item.url">
+            <mat-icon class="link-icon">{{ item.icon }}</mat-icon>
+            <span class="link-span">{{ item.label }}</span>
+          </mat-list-item>
+        </a>
+        }
+      </mat-nav-list>
+    </div>
+  </mat-sidenav>
+
+  <!-- Boton para mostrar/ocultar la side bar y logout -->
+  <mat-toolbar color="primary">
     <button
       mat-icon-button
-      class="example-icon"
-      aria-label="Example icon-button with menu icon"
+      (click)="sidenav.toggle()"
     >
       <mat-icon>menu</mat-icon>
     </button>
+    <span class="spacer"></span>
     <button
       type="button"
-      class="btn btn-light"
+      class="btn btn-primary"
     >
       Logout
     </button>
   </mat-toolbar>
-</nav>
+
+  <!-- Contenido de la pagina -->
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</mat-sidenav-container>
