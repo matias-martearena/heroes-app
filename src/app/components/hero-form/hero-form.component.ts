@@ -11,6 +11,8 @@ import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatGridListModule } from '@angular/material/grid-list'
 import { MatInputModule } from '@angular/material/input'
 import { MatSelectModule } from '@angular/material/select'
+import { HeroServices } from '../../services/heroes.service'
+import { Hero } from '../../interfaces/heroes.interface'
 
 @Component({
   selector: 'app-hero-form',
@@ -30,14 +32,23 @@ import { MatSelectModule } from '@angular/material/select'
 export class HeroFormComponent {
   form: FormGroup
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private heroService: HeroServices) {
     this.form = this.fb.group({
-      user: ['', Validators.required],
-      surname: ['', Validators.required],
-      password: ['', [Validators.required, Validators.minLength(6)]],
-      gender: ['', Validators.required],
+      superhero: ['', Validators.required],
+      publisher: ['', Validators.required],
+      alter_ego: ['', Validators.required],
+      first_appearance: ['', Validators.required],
+      characters: ['', Validators.required],
     })
   }
 
-  create() {}
+  create() {
+    if (this.form.valid) {
+      console.log(this.form.value)
+
+      this.heroService.createHero(this.form.value as Hero).subscribe(res => {
+        console.log(res)
+      })
+    }
+  }
 }
