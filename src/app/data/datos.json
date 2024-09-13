@@ -13,7 +13,8 @@
       "publisher": "Marvel Comics",
       "alter_ego": "Kira Yamada",
       "first_appearance": "Shadow Comics #1",
-      "characters": "Kira Yamada"
+      "characters": "Kira Yamada",
+      "img": "https://i1.whakoom.com/large/04/0b/4a21b15f0e474d1e8e0d6b9f31336aa0.jpg?_gl=1*1hurowm*_ga*MjEzNzE1NjAwLjE3MjYyMzgyMzM.*_ga_7TE1PVSLNM*MTcyNjIzODIzMy4xLjAuMTcyNjIzODIzMy42MC4wLjA."
     },
     {
       "id": "marvel-phantom",
@@ -21,7 +22,8 @@
       "publisher": "Marvel Comics",
       "alter_ego": "Ethan Walker",
       "first_appearance": "Galaxy Adventures #3",
-      "characters": "Ethan Walker"
+      "characters": "Ethan Walker",
+      "img": "https://pictures.abebooks.com/inventory/31497536824.jpg"
     },
     {
       "id": "dc-quantum",
@@ -29,7 +31,8 @@
       "publisher": "DC Comics",
       "alter_ego": "Lena Harker",
       "first_appearance": "Quantum Comics #10",
-      "characters": "Lena Harker"
+      "characters": "Lena Harker",
+      "img": "https://images.comiccollectorlive.com/covers/9bd/9bdfb368-a4d5-4bf2-a9c1-10f0628e0ec1.jpg"
     },
     {
       "id": "dc-nebula",
@@ -37,7 +40,8 @@
       "publisher": "DC Comics",
       "alter_ego": "Orion Black",
       "first_appearance": "Cosmic Chronicles #5",
-      "characters": "Orion Black"
+      "characters": "Orion Black",
+      "img": "https://www.aerolishka.com/66decde2f1b45_5577973_capture.webp"
     },
     {
       "id": "marvel-pulse",
@@ -45,7 +49,8 @@
       "publisher": "Marvel Comics",
       "alter_ego": "Amara Silva",
       "first_appearance": "Pulse Comics #12",
-      "characters": "Amara Silva"
+      "characters": "Amara Silva",
+      "img": "https://comicvine.gamespot.com/a/uploads/scale_small/11119/111198274/4253276-pulse.jpg"
     },
     {
       "id": "marvel-glimmer",
@@ -53,7 +58,8 @@
       "publisher": "Marvel Comics",
       "alter_ego": "Luca Morales",
       "first_appearance": "Light Warriors #7",
-      "characters": "Luca Morales"
+      "characters": "Luca Morales",
+      "img": "https://comicvine.gamespot.com/a/uploads/scale_small/4/49448/929152-glimmer_sitting.jpg"
     },
     {
       "id": "dc-ironclad",
@@ -61,7 +67,8 @@
       "publisher": "DC Comics",
       "alter_ego": "Victor Steel",
       "first_appearance": "Iron Comics #4",
-      "characters": "Victor Steel"
+      "characters": "Victor Steel",
+      "img": "https://comicvine.gamespot.com/a/uploads/scale_small/12/124259/7866412-rco022_1610544088.jpg"
     },
     {
       "id": "marvel-tempest",
@@ -69,7 +76,8 @@
       "publisher": "Marvel Comics",
       "alter_ego": "Fiona Drake",
       "first_appearance": "Storm Warriors #6",
-      "characters": "Fiona Drake"
+      "characters": "Fiona Drake",
+      "img": "https://comicvine.gamespot.com/a/uploads/scale_small/11141/111417740/8408941-titans_vol_3_28_textless_variant.jpg"
     },
     {
       "id": "dc-sentinel",
@@ -77,7 +85,8 @@
       "publisher": "DC Comics",
       "alter_ego": "Jasper Cole",
       "first_appearance": "Sentinel Comics #2",
-      "characters": "Jasper Cole"
+      "characters": "Jasper Cole",
+      "img": "https://comicvine.gamespot.com/a/uploads/scale_small/0/2493/99330-16297-sentinel.jpg"
     },
     {
       "id": "marvel-phantomstrike",
@@ -85,7 +94,8 @@
       "publisher": "Marvel Comics",
       "alter_ego": "Maya Brooks",
       "first_appearance": "Shadow Warriors #9",
-      "characters": "Maya Brooks"
+      "characters": "Maya Brooks",
+      "img": "https://comicvine.gamespot.com/a/uploads/scale_small/5/50736/952832-warstrike.jpg"
     },
     {
       "id": "08ef",
@@ -93,7 +103,8 @@
       "publisher": "Ipsa sed excepturi ",
       "alter_ego": "Ut ex reprehenderit ",
       "first_appearance": "Dolor est non omnis",
-      "characters": "Pariatur Ex ipsam d"
+      "characters": "Pariatur Ex ipsam d",
+      "img": "https://www.researchgate.net/publication/315108532/figure/fig1/AS:472492935520261@1489662502634/Figura-2-Avatar-que-aparece-por-defecto-en-Facebook.png"
     }
   ]
 }

@@ -1,0 +1,19 @@
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 250px;
+  height: auto;
+  margin: 0 1rem 1rem;
+  background-color: #242327d2;
+  color: #ccc;
+}
+
+img {
+  width: fill;
+  height: 400px;
+}

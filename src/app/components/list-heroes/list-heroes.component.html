@@ -1,11 +1,23 @@
 <section>
-  @for (hero of getHeroes; track hero.id) {
-  <div>
-    <h3>{{ hero.superhero }}</h3>
-    <p>{{ hero.publisher }}</p>
-    <p>{{ hero.alter_ego }}</p>
-    <p>{{ hero.first_appearance }}</p>
-    <p>{{ hero.characters }}</p>
+  <div class="hero-container">
+    @for (hero of getHeroes; track hero.id) {
+    <div
+      class="card"
+      style="width: 18rem"
+    >
+      <img
+        [src]="hero.img"
+        class="card-img-top"
+        [alt]="hero.superhero"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ hero.superhero }}</h5>
+        <p>{{ hero.publisher }}</p>
+        <p>{{ hero.alter_ego }}</p>
+        <p>{{ hero.first_appearance }}</p>
+        <p>{{ hero.characters }}</p>
+      </div>
+    </div>
+    }
   </div>
-  }
 </section>
