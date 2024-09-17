@@ -1,3 +1,4 @@
+import { Router } from '@angular/router'
 import { Component, Input } from '@angular/core'
 import { HeroServices } from '../../services/heroes.service'
 import { Hero } from '../../interfaces/heroes.interface'
@@ -13,7 +14,7 @@ export class ListHeroesComponent {
   private _heroes: Hero[] = []
   @Input() searchFilter: string = ''
 
-  constructor(private heroServices: HeroServices) {}
+  constructor(private heroServices: HeroServices, private router: Router) {}
 
   public get getHeroes(): Hero[] {
     if (this.searchFilter) {
@@ -25,7 +26,7 @@ export class ListHeroesComponent {
   }
 
   public set setHeroes(newHero: Hero) {
-    this._heroes.push(newHero) // NOTE: Verificar que el crud funcione
+    this._heroes.push(newHero)
   }
 
   ngOnInit(): void {
@@ -39,4 +40,14 @@ export class ListHeroesComponent {
       complete: () => console.log('Hero request completed'),
     })
   }
+
+  deleteHero(id: string): void {
+    this._heroes = this._heroes.filter(hero => hero.id !== id)
+    this.heroServices.deleteHero(id).subscribe()
+  }
+
+  //TODO: Make the edit method with redirect to form with hero id in param
+  // editHero(id: string): void {
+  //   this.router.navigate
+  // }
 }

@@ -17,3 +17,18 @@ img {
   width: fill;
   height: 400px;
 }
+
+.btn-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.btn > a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+button {
+  width: 100px;
+}

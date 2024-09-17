@@ -16,6 +16,21 @@
         <p>{{ hero.alter_ego }}</p>
         <p>{{ hero.first_appearance }}</p>
         <p>{{ hero.characters }}</p>
+        <div class="btn-container">
+          <button
+            type="button"
+            class="btn btn-primary"
+          >
+            <a href="#">Editar</a>
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            (click)="deleteHero(hero.id)"
+          >
+            Eliminar
+          </button>
+        </div>
       </div>
     </div>
     }
