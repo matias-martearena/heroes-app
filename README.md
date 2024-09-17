@@ -1,27 +1,90 @@
-# HeroesApp
+# 🦸‍♂️ SuperHero Squad - ¡La Liga de los Héroes Angular! 🦸‍♀️
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.4.
+---
 
-## Development server
+<img src='https://www.mundodeportivo.com/alfabeta/hero/2021/12/vengadores.1640005155.553.jpg?width=1200' alt='Los Vengadores' style="border: 4px solid white; border-radius:12px;" />
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+¡Bienvenidos a **SuperHero Squad**! Esta es tu nueva base de operaciones para gestionar, buscar, agregar y guardar a tus héroes favoritos. ¡Porque todos necesitamos un equipo épico para salvar el mundo, o simplemente para admirar lo geniales que son! 🌍✨
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🚀 ¿De qué trata este proyecto?
 
-## Build
+Esta es una página creada con **Angular** para gestionar héroes. La aplicación consume una API propia creada con **json-server** y ofrece varias funcionalidades heroicas:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Lista de Héroes**: Muestra a tus héroes con un estilo épico en formato de tarjeta.
+- **Búsqueda de Héroes**: ¿No puedes encontrar a tu héroe favorito? ¡Búscalo por su nombre!
+- **Agregar Héroes**: ¿Conoces un nuevo héroe que el mundo debería conocer? ¡Agrégalo fácilmente!
+- **Login**: ¡Accede para mantener tu lista personalizada!
 
-## Running unit tests
+## 🧰 Tecnologías Utilizadas
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Angular**: El framework que hace que todo funcione como por arte de magia.
+- **TypeScript**: Porque a los héroes les gusta el tipado estático.
+- **json-server**: Nuestra API para manejar los héroes. Simple pero poderosa, como un buen sidekick.
+- **Bootstrap** y **Angular Material**: Para que los estilos sean increibles igual que los heroes.
 
-## Running end-to-end tests
+## 📦 Instalación y Puesta en Marcha
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Paso 1: Clonar el repositorio
 
-## Further help
+```bash
+git clone https://github.com/matias-martearena/heroes-app.git
+cd heroes-app
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Paso 2: Instalar dependencias
+
+Usamos el superpoder de **npm** para instalar las dependencias:
+
+```bash
+npm install
+```
+
+### Paso 3: ¡Levanta el servidor Angular! 🚀
+
+```bash
+npm start
+```
+
+o, si prefieres:
+
+```bash
+ng serve
+```
+
+Abre tu navegador favorito y ve a `http://localhost:4200` para ver a tu equipo de héroes en acción.
+
+### Paso 4: Ejecuta la API de Héroes ⚙️
+
+```bash
+npm run back
+```
+
+Tu API estará disponible en `http://localhost:3000`. ¡Es hora de traer a los héroes al juego!
+
+## 🎨 ¡Estilos Épicos!
+
+Queríamos que tus héroes se vieran tan bien como se sienten, por lo que añadimos unos **estilos visuales** impresionantes para hacer que la interfaz brille tanto como el mismísimo Thor en una tormenta.
+
+- **Tarjetas de Héroes**: Cada héroe tiene su propia tarjeta personalizada.
+- **Barra de búsqueda**: ¡Encuentra a tus héroes rápidamente con un estilo elegante!
+- **Formulario de Héroes**: Elige colores vibrantes para que agregar héroes sea tan divertido como lanzarse al campo de batalla.
+
+## 🌟 Funcionalidades Asombrosas
+
+- **🔍 Buscar Héroes**: Solo escribe el nombre y nuestra página hará el resto.
+- **🦸‍♀️ Agregar Héroes**: Rellena el formulario y ¡boom!, un nuevo héroe aparece en la lista.
+- **🔑 Login**: Accede con tu cuenta para llevar el control de tu equipo personal de héroes.
+
+## 🎮 Modo de Juego
+
+1. **Inicia la aplicación** (ver instrucciones más arriba).
+2. **Ve a la lista de héroes** y deslízate entre las tarjetas.
+3. **Usa la barra de búsqueda** para encontrar a tu héroe favorito.
+4. **Agrega héroes** nuevos al universo usando el formulario.
+5. **Inicia sesión** para proteger tu listado de héroes del mal.
+
+## 🦸‍♂️ ¡Conviértete en el Héroe que Siempre Quisiste Ser!
+
+Este proyecto es solo el comienzo. ¡Siéntete libre de modificar, mejorar y expandir este universo de héroes! ¿Quién sabe? Tal vez un día se convertirá en una aplicación de renombre mundial.

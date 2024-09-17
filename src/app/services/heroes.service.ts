@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http'
 import { Injectable } from '@angular/core'
-import { Observable } from 'rxjs'
+import { catchError, Observable, of } from 'rxjs'
 
 import { environment } from '../environments/environment.development'
 import { Hero } from '../interfaces/heroes.interface'
@@ -13,8 +13,11 @@ export class HeroServices {
 
   constructor(private http: HttpClient) {}
 
-  getHeroes(): Observable<Hero[]> {
+  getHeroes(): Observable<Hero[] | undefined> {
     return this.http.get<Hero[]>(`${this.apiUrl}/heroes`)
+    .pipe(
+      catchError(error => of(undefined))
+    )
   }
 
   deleteHero(): Observable<Hero> {
