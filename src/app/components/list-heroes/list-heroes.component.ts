@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, Input } from '@angular/core'
 import { HeroServices } from '../../services/heroes.service'
 import { Hero } from '../../interfaces/heroes.interface'
 
@@ -11,10 +11,16 @@ import { Hero } from '../../interfaces/heroes.interface'
 })
 export class ListHeroesComponent {
   private _heroes: Hero[] = []
+  @Input() searchFilter: string = ''
 
   constructor(private heroServices: HeroServices) {}
 
   public get getHeroes(): Hero[] {
+    if (this.searchFilter) {
+      return this._heroes.filter(hero =>
+        hero.superhero.toLowerCase().includes(this.searchFilter.toLowerCase()),
+      )
+    }
     return this._heroes
   }
 

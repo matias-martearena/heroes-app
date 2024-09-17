@@ -6,6 +6,7 @@ import { MatButtonModule } from '@angular/material/button'
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators'
 import { Subject } from 'rxjs'
 import { Router, RouterModule } from '@angular/router'
+import { ListHeroesComponent } from '../list-heroes/list-heroes.component'
 
 @Component({
   selector: 'app-search-bar',
@@ -16,6 +17,7 @@ import { Router, RouterModule } from '@angular/router'
     MatMenuModule,
     MatButtonModule,
     RouterModule,
+    ListHeroesComponent,
   ],
   templateUrl: './search-bar.component.html',
   styleUrl: './search-bar.component.css',
@@ -23,6 +25,7 @@ import { Router, RouterModule } from '@angular/router'
 export class SearchBarComponent {
   private searchSubject = new Subject<string>()
   private router = inject(Router)
+  currentSearch: string = ''
 
   constructor() {
     this.searchSubject
@@ -41,8 +44,8 @@ export class SearchBarComponent {
   }
 
   doSearch(searchTerm: string) {
-    console.log('Current search:', searchTerm)
-    // To-Do: implement search logic and call the service here
+    console.log('Searching for:', searchTerm)
+    this.currentSearch = searchTerm
   }
 
   logout() {

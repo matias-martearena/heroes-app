@@ -3,4 +3,8 @@
     <input type="text" (input)="onSearch($event)" />
     <mat-icon class="search-icon" matSuffix>search</mat-icon>
   </form>
+
+  <section>
+    <app-list-heroes [searchFilter]="currentSearch" />
+  </section>
 </mat-toolbar>

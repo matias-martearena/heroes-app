@@ -13,11 +13,8 @@ export class HeroServices {
 
   constructor(private http: HttpClient) {}
 
-  getHeroes(): Observable<Hero[] | undefined> {
+  getHeroes(): Observable<Hero[]> {
     return this.http.get<Hero[]>(`${this.apiUrl}/heroes`)
-    .pipe(
-      catchError(error => of(undefined))
-    )
   }
 
   deleteHero(): Observable<Hero> {
