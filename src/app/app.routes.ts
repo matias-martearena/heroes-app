@@ -24,6 +24,10 @@ export const routes: Routes = [
         component: HeroFormComponent,
       },
       {
+        path: 'heroes-form/:id',
+        component: HeroFormComponent,
+      },
+      {
         path: 'list-heroes',
         component: ListHeroesComponent,
       },

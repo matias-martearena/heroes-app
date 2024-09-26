@@ -9,7 +9,7 @@
   "heroes": [
     {
       "id": "marvel-shadow",
-      "superhero": "Shadow Blade",
+      "superhero": "Shadow Bladess",
       "publisher": "Marvel Comics",
       "alter_ego": "Kira Yamada",
       "first_appearance": "Shadow Comics #1",
@@ -105,6 +105,30 @@
       "first_appearance": "Dolor est non omnis",
       "characters": "Pariatur Ex ipsam d",
       "img": "https://www.researchgate.net/publication/315108532/figure/fig1/AS:472492935520261@1489662502634/Figura-2-Avatar-que-aparece-por-defecto-en-Facebook.png"
+    },
+    {
+      "id": "adfc",
+      "superhero": "Shadow Blades",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Kira Yamada",
+      "first_appearance": "Shadow Comics #1",
+      "characters": "Kira Yamada"
+    },
+    {
+      "id": "1e87",
+      "superhero": "Shadow Blades",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Kira Yamada",
+      "first_appearance": "Shadow Comics #1",
+      "characters": "Kira Yamada"
+    },
+    {
+      "id": "8298",
+      "superhero": "In in ea dolorum eni",
+      "publisher": "Mollitia dolores aut",
+      "alter_ego": "Impedit eu neque vo",
+      "first_appearance": "Sit eu eligendi quos",
+      "characters": "Illo dicta eius et a"
     }
   ]
 }
