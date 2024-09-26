@@ -1,10 +1,15 @@
 <mat-toolbar class="navbar">
   <form class="search-form">
-    <input type="text" (input)="onSearch($event)" />
-    <mat-icon class="search-icon" matSuffix>search</mat-icon>
+    <input
+      type="text"
+      (input)="onSearch($event)"
+      placeholder="Busca tu heroe"
+    />
+    <mat-icon
+      class="search-icon"
+      matSuffix
+      >search</mat-icon
+    >
   </form>
-
-  <section>
-    <app-list-heroes [searchFilter]="currentSearch" />
-  </section>
 </mat-toolbar>
+<app-list-heroes [searchFilter]="currentSearch" />

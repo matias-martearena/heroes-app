@@ -1,34 +1,62 @@
 .hero-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
 }
 
 .card {
-  width: 250px;
-  height: auto;
-  margin: 0 1rem 1rem;
-  background-color: #242327d2;
-  color: #ccc;
+  --card-bc: #11295a;
+  --card-c: #d8eeff;
+  border: none;
+  width: 14rem;
+  background-color: var(--card-bc);
+  color: var(--card-c);
 }
 
 img {
   width: fill;
-  height: 400px;
+  height: 40dvh;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.card-title {
+  --title-c: #eef8ff;
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--title-c);
 }
 
 .btn-container {
   display: flex;
   gap: 1rem;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .btn > a {
-  color: #ccc;
+  color: var(--p-color);
   text-decoration: none;
 }
 
 button {
-  width: 100px;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+mat-icon {
+  --icon-color: #eef8ff;
+  color: var(--icon-color);
+}
+
+.under-border {
+  --back-c: #52b4ff;
+  height: 1rem;
+  background-color: var(--back-c);
+  border: none;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }

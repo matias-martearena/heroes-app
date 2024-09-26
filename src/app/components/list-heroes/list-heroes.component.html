@@ -1,17 +1,14 @@
 <section>
   <div class="hero-container">
     @for (hero of getHeroes; track hero.id) {
-    <div
-      class="card"
-      style="width: 18rem"
-    >
+    <div class="card">
       <img
         [src]="hero.img"
         class="card-img-top"
         [alt]="hero.superhero"
       />
       <div class="card-body">
-        <h5 class="card-title">{{ hero.superhero }}</h5>
+        <p class="card-title">{{ hero.superhero }}</p>
         <p>{{ hero.publisher }}</p>
         <p>{{ hero.alter_ego }}</p>
         <p>{{ hero.first_appearance }}</p>
@@ -21,17 +18,18 @@
             type="button"
             class="btn btn-primary"
           >
-            <a href="#">Editar</a>
+            <a href="#"><mat-icon>edit</mat-icon></a>
           </button>
           <button
             type="button"
-            class="btn btn-primary"
+            class="btn btn-danger"
             (click)="deleteHero(hero.id)"
           >
-            Eliminar
+            <mat-icon>delete</mat-icon>
           </button>
         </div>
       </div>
+      <div class="under-border"></div>
     </div>
     }
   </div>

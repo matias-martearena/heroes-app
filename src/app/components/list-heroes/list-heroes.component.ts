@@ -2,11 +2,12 @@ import { Router } from '@angular/router'
 import { Component, Input } from '@angular/core'
 import { HeroServices } from '../../services/heroes.service'
 import { Hero } from '../../interfaces/heroes.interface'
+import { MatIcon } from '@angular/material/icon'
 
 @Component({
   selector: 'app-list-heroes',
   standalone: true,
-  imports: [],
+  imports: [MatIcon],
   templateUrl: './list-heroes.component.html',
   styleUrl: './list-heroes.component.css',
 })
