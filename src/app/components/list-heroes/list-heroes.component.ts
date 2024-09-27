@@ -47,8 +47,7 @@ export class ListHeroesComponent {
     this.heroServices.deleteHero(id).subscribe()
   }
 
-  //TODO: Make the edit method with redirect to form with hero id in param
-  // editHero(id: string): void {
-  //   this.router.navigate
-  // }
+  editHero(id: string): void {
+    this.router.navigate(['/home/heroes-form', id]);
+  }
 }

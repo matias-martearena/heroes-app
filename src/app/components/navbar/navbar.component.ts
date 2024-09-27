@@ -1,5 +1,5 @@
 import { Component } from '@angular/core'
-import { RouterOutlet } from '@angular/router'
+import { Router, RouterOutlet } from '@angular/router'
 
 import { MatIconModule } from '@angular/material/icon'
 import { MatButtonModule } from '@angular/material/button'
@@ -22,10 +22,16 @@ import { MatListModule } from '@angular/material/list'
   styleUrl: './navbar.component.css',
 })
 export class NavbarComponent {
+  constructor(private router: Router) {}
+
   sidebarItems = [
     { label: 'Home', icon: 'home', url: '/home' },
     { label: 'Listado', icon: 'label', url: '/home/list-heroes' },
     { label: 'Añadir', icon: 'add', url: '/home/heroes-form' },
     { label: 'Buscar', icon: 'search', url: '/home/search-heroes' },
   ]
+
+  logout() {
+    this.router.navigate(['/login'])
+  }
 }
