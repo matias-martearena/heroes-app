@@ -4,6 +4,7 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { HeroFormComponent } from './components/hero-form/hero-form.component'
 import { ListHeroesComponent } from './components/list-heroes/list-heroes.component'
 import { LoginComponent } from './components/login/login.component'
+import { HomePageComponent } from './components/home-page/home-page.component'
 
 export const routes: Routes = [
   {
@@ -19,6 +20,10 @@ export const routes: Routes = [
     path: 'home',
     component: NavigationComponent,
     children: [
+      {
+        path: '',
+        component: HomePageComponent,
+      },
       {
         path: 'heroes-form',
         component: HeroFormComponent,

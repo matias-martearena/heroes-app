@@ -1,0 +1,26 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90dvh;
+}
+
+.title {
+  font-family: 'Anton', sans-serif;
+  color: transparent;
+  padding: 5rem 0;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  font-size: 15rem;
+  font-weight: bold;
+
+  background-image: url('../../assets/avengers-3.jpg');
+  background-size: cover;
+  background-position-y: center;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
